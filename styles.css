@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--blood-red), var(--light-blue), var(--caf-noir), var(--tawny), var(--ecru));
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    grid-column: span 2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-button {
+    display: none; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.animation-section {
+    grid-column: span 2;
+    background-color: var(--sienna);
+    padding: 20px;
+    text-align: center;
+}
+
+.slideshow-section {
+    grid-column: span 2;
+    /* Add styling for the slideshow container */
+}
+
+.description-section {
+    background: url('path/to/opaque-background-image.jpg') center center / cover no-repeat;
+    grid-column: span 2;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: var(--blood-red);
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+
+    .menu-items li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
