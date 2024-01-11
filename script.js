@@ -1,27 +1,14 @@
-// Your JavaScript code goes here
+document.addEventListener("DOMContentLoaded", function () {
+    const slideshowContainer = document.querySelector(".slideshow-container");
+    const images = document.querySelectorAll(".slideshow-section img");
+    let counter = 1;
 
-// Example: Add a simple function for demonstration
-function showMessage() {
-    alert("Hello from The Cigar Lounge!");
-}
+    setInterval(() => {
+        slideshowContainer.style.transform = `translateX(${-counter * 100}%)`;
+        counter++;
 
-// Add this function to scroll to the contact section when the button is clicked
-function scrollToContact() {
-    const contactSection = document.getElementById('contactSection');
-    contactSection.scrollIntoView({ behavior: 'smooth' });
-}
-
-// Add this event listener to show/hide the button based on scroll position
-window.addEventListener('scroll', function() {
-    const contactButton = document.getElementById('contactButton');
-    const scrollPosition = window.scrollY;
-
-    // You can adjust the scroll threshold based on your design
-    const scrollThreshold = 200;
-
-    if (scrollPosition > scrollThreshold) {
-        contactButton.style.display = 'block';
-    } else {
-        contactButton.style.display = 'none';
-    }
+        if (counter === images.length) {
+            counter = 0;
+        }
+    }, 3000); // Change the duration (in milliseconds) between image transitions
 });

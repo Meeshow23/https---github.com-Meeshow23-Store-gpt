@@ -22,6 +22,7 @@ header {
     grid-column: span 2;
     font-size: 24px;
     font-weight: bold;
+    color: var(--licorice);
 }
 
 .menu {
@@ -34,7 +35,7 @@ header {
     display: none; /* Hidden by default on larger screens */
     background: none;
     border: none;
-    color: #fff;
+    color: var(--licorice);
     cursor: pointer;
     font-size: 16px;
     margin-right: 20px;
@@ -55,6 +56,7 @@ header {
     background-color: var(--sienna);
     padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
 .slideshow-section {
