@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <title>The Cigar Factory Lounge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cigar Factory Lounge</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <div class="grid-container">
-            <div class="logo"><img src="assets/images/logo.png" alt=""></div>
-            <nav class="menu">
-                <button class="menu-button" onclick="toggleMenu()">Menu</button>
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="onlinestore.html">Online Store</a></li>
-                    <li><a href="events.html">Events & Venue</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section class="grid-container">
-            <div class="animation-section">ONLINE STORE COMING SOON!!!!</div>
-            <div class="slideshow-section">
-                <img src="assets/images/accWall.jpg" alt="Cigar accessories">
-                <img src="assets/images/backLounge.jpg" alt="Cigar Lounge">
-                <img src="assets/images/backLounge2.jpg" alt="cigar lounge interior">
-                <img src="assets/images/event.jpg" alt="cigar lounge event">
-                <img src="assets/images/event2.jpg" alt="people at a cigr event">
-            </div>
-            <div class="description-section">
-                <p>Description paragraph with opaque background</p>
-            </div>
-        </section>
-    </main>
+<!-- First Block -->
+<div class="wrapper-grid-container first-black">
+  <div class="logo">LOGO</div>
+  <div class="menu-button">MENU</div>
+</div>
+
+<!-- Second Block -->
+<div class="wrapper-grid-container second-black">
+  <div class="slideshow-container">
+    <div class="slideshow-section">
+      <!-- Images for slideshow -->
+      <img src="assets/images/accWall.jpg" alt="Cigar accessories">
+      <img src="assets/images/backLounge.jpg" alt="Cigar Lounge">
+      <img src="assets/images/backLounge2.jpg" alt="Cigar lounge interior">
+      <img src="assets/images/event.jpg" alt="Cigar lounge event">
+      <img src="assets/images/event2.jpg" alt="People at a cigar event">
+    </div>
+    <div class="description-section one-only">
+      <p>The One & Only Lounge In Town. The Cigar Factory Lounge</p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Block -->
+<div class="wrapper-grid-container third-black">
+  <div class="animation-section">ONLINE CIGAR STORE COMING SOON!!!!</div>
+</div>
+
+<!-- Fourth Block -->
+<div class="wrapper-grid-container fourth-black"></div>
+
+<!-- Fifth Block -->
+<div class="wrapper-grid-container fifth-black">
+  <div class="map-section">
+    <p>Address: 2804 E. Los Angeles Ave., Simi Valley, CA, 93063</p>
+    <!-- Add map here if needed -->
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
